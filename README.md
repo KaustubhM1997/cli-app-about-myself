@@ -1,5 +1,5 @@
 # How well do you know me?
-A CLI app consisting of a quiz created with repl.it to know how much my network knows about me.
+A CLI app consisting of a quiz created using NodeJS in repl.it to know how much my network knows about me.
 
 ### How does the App work?
 
