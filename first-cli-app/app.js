@@ -47,7 +47,7 @@ var questionTwo = {
   a) ZNMD
   b) 3 idiots
   c) Swades\n`,
-  answer: "ZNMD"
+  answer: "a"
 }
 
 var questionThree = {
@@ -66,10 +66,26 @@ var questionFour = {
   answer: "a"
 }
 
+var questionFive = {
+  question: `Which is Kaustubh's favorite sport ? \n 
+  a) Football
+  b) Golf
+  c) Cricked\n`,
+  answer: "c"
+}
+
+var questionSix = {
+  question: `Would Kaustubh be able to crack neoG interviews ? \n 
+  a) Yes
+  b) No
+  c) Maybe\n`,
+  answer: "a"
+}
+
 
 // you can directly insert the above objects in the array below
 
-var questions = [questionOne, questionTwo, questionThree, questionFour];
+var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix];
 
 for (var i = 0; i < questions.length; i++) {
 
@@ -80,20 +96,20 @@ for (var i = 0; i < questions.length; i++) {
 var highScores = [{
 
   name: "Kaustubh ",
-  score: "4"
+  score: "6"
 }, {
 
   name: "Aaron ",
-  score: "3"
+  score: "5"
 
 }]
 
 
 console.log("YAY you scored! ", score);
 
-console.log("|Game over, thanks for playing!|")
+console.log("\n|Game over, thanks for playing!|")
 
-console.log("------------------");
+console.log("------------------------------------------------");
 
 
 for (var k = 0; k < highScores.length; k++) {
@@ -104,25 +120,25 @@ for (var k = 0; k < highScores.length; k++) {
   if (score > currentHighScore.score) {
 
     // console.log("YAY you scored! ", score);
-    console.log("Congratulations," + userName + "!" + " You have beaten the current high score");
+    console.log("\nCongratulations," + userName + "!" + " You have beaten the current high score");
 
   } else {
     // 
   }
 }
 
+ console.log("\nCheck out the high scores: \n");
+ 
+// console.log("------------------");
 
 for (var j = 0; j < highScores.length; j++) {
   var currentScore = highScores[j];
 
-  var a = currentScore.name;
-  var b = currentScore.score;
 
-  console.log("------------------");
-
-  console.log("Check out the high scores: " + currentScore.name, currentScore.score);
+  console.log(currentScore.name,currentScore.score);
 
   // console.log("---------");
 
 
 }
+
